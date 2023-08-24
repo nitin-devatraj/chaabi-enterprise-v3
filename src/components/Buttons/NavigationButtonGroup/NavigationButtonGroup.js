@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NavigationButtonGroup.module.scss";
-import classes from "../../../global-styles/style.module.scss";
+import classes from "../../../global-styles/styles.module.scss";
 
 function NavigationButtonGroup() {
   return (

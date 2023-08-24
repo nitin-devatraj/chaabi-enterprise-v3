@@ -11,6 +11,7 @@
   line-height: 1.5rem;
   background: var(--primary50, #0d62ff);
   border: 1px solid var(--primary50, #0d62ff);
+  cursor: pointer;
 }
 
 .primaryBtn:not(:disabled):hover {
