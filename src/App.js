@@ -15,6 +15,7 @@ import FileInput from "./components/InputFields/FileInput/FileInput";
 import cloudIcon from "./assets/icons/cloud-upload-icon.svg";
 import TabGroup from "./components/TabGroup/TabGroup";
 import TextInput from "./components/InputFields/TextInput/TextInput";
+import Accordian from "./components/Accordian/Accordian";
 
 function App() {
   return (
@@ -95,6 +96,16 @@ function App() {
 
       <div>
         text - input : <TextInput />
+      </div>
+
+      <div>
+        accordian - to be continued :{" "}
+        <Accordian
+          tabs={[
+            { title: "Accordian title", children: ["lorem ipsum dolor"] },
+            { title: "Accordian title", children: ["lorem ipsum dolor"] },
+          ]}
+        />
       </div>
     </div>
   );
