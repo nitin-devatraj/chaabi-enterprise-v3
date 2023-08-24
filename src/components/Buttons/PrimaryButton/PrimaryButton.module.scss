@@ -1,0 +1,29 @@
+.primaryBtn {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  background: var(--primary50, #0d62ff);
+  border: 1px solid var(--primary50, #0d62ff);
+}
+
+.primaryBtn:not(:disabled):hover {
+  box-shadow: 0px 0px 0px 4px #dbe7ff;
+}
+
+.primaryBtn:not(:disabled):active {
+  box-shadow: 0px 0px 0px 4px #dbe7ff;
+  background: #004ddd;
+}
+
+.primaryBtn[disabled] {
+  background: #e2e3e6;
+  border: 1px solid #e2e3e6;
+  color: #fff;
+}

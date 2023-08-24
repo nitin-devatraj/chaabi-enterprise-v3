@@ -1,0 +1,42 @@
+// button - group
+.btnGroup {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 0.25rem;
+
+  border: 0.0625rem solid var(--neutral90, #e2e3e6);
+
+  .btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 0.0625rem solid var(--neutral90, #e2e3e6);
+    border-right: 1px solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+    color: var(--neutral20, #303134);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .selectedBtn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 0.0625rem solid var(--neutral90, #e2e3e6);
+    border-right: 1px solid var(--neutral90, #e2e3e6);
+    background: var(--neutral95, #f0f1f4);
+    color: var(--neutral20, #303134);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}

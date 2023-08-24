@@ -1,0 +1,29 @@
+.tertiaryBtn {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: #0d62ff;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: white;
+}
+
+.tertiaryBtn:not(:disabled):hover {
+  color: #0d62ff;
+  border: 1px solid #e2e3e6;
+}
+
+.tertiaryBtn:not(:disabled):active {
+  color: #0d62ff;
+  border: 1px solid #e2e3e6;
+  background-color: #f0f1f4;
+}
+
+.tertiaryBtn[disabled] {
+  color: #c6c7ca;
+}
