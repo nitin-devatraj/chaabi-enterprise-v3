@@ -1,0 +1,998 @@
+:root {
+  // color themes
+  // neutral - color theme
+  --neutral0: #000000;
+  --neutral10: #1b1c1f;
+  --neutral20: #303134;
+  --neutral30: #46474a;
+  --neutral40: #5e5f62;
+  --neutral50: #75777a;
+  --neutral60: #909194;
+  --neutral70: #aaacaf;
+  --neutral80: #c6c7ca;
+  --neutral90: #e2e3e6;
+  --neutral95: #f0f1f4;
+  --neutral99: #fbfcff;
+  --neutral100: #ffffff;
+
+  // primary - color theme
+  --primary0: #000000;
+  --primary10: #001b4c;
+  --primary20: #002a79;
+  --primary30: #003ba9;
+  --primary40: #004ddd;
+  --primary50: #0d62ff;
+  --primary60: #6299ff;
+  --primary70: #8cb4ff;
+  --primary80: #b4ceff;
+  --primary90: #dbe8ff;
+  --primary95: #eff5ff;
+  --primary99: #fbfcff;
+  --primary100: #ffffff;
+
+  // alert - color theme
+  --alert0: #000000;
+  --alert10: #7a271a;
+  --alert20: #912018;
+  --alert30: #b42318;
+  --alert40: #d92d20;
+  --alert50: #f04438;
+  --alert60: #f97066;
+  --alert70: #fda29b;
+  --alert80: #fecdca;
+  --alert90: #fee4e2;
+  --alert95: #fef3f2;
+  --alert99: #fffbfa;
+  --alert100: #ffffff;
+
+  // success - color theme
+  --success0: #000000;
+  --success10: #054f31;
+  --success20: #05603a;
+  --success30: #027a48;
+  --success40: #039855;
+  --success50: #12b76a;
+  --success60: #32d583;
+  --success70: #6ce9a6;
+  --success80: #a6f4c5;
+  --success90: #d1fadf;
+  --success95: #ecfdf3;
+  --success99: #f6fef9;
+  --success100: #ffffff;
+
+  // warning - color theme
+  --warning0: #000000;
+  --warning10: #7a2e0e;
+  --warning20: #93370d;
+  --warning30: #b54708;
+  --warning40: #dc6803;
+  --warning50: #f79009;
+  --warning60: #fdb022;
+  --warning70: #fec84b;
+  --warning80: #fedf89;
+  --warning90: #fef0c7;
+  --warning95: #fffaeb;
+  --warning99: #fffcf5;
+  --warning100: #ffffff;
+
+  // badge - color theme
+  // group - 1
+  --badgeColorBack1: #fce4ec;
+  --badgeColorMain1: #d81b60;
+
+  // group - 2
+  --badgeColorBack2: #f3e5f5;
+  --badgeColorMain2: #8e24aa;
+
+  // group - 3
+  --badgeColorBack3: #e0f7fa;
+  --badgeColorMain3: #3949ab;
+
+  // group - 4
+  --badgeColorBack4: #e3f2fd;
+  --badgeColorMain4: #1e88e5;
+
+  // group - 5
+  --badgeColorBack5: #e0f7fa;
+  --badgeColorMain5: #00acc1;
+
+  // group - 6
+  --badgeColorBack6: #e8f5e9;
+  --badgeColorMain6: #43a047;
+
+  // group - 7
+  --badgeColorBack7: #fffde7;
+  --badgeColorMain7: #fdd835;
+
+  // group - 8
+  --badgeColorBack8: #fff3e0;
+  --badgeColorMain8: #fb8c00;
+
+  // group - 9
+  --badgeColorBack9: #efebe9;
+  --badgeColorMain9: #6d4c41;
+
+  // shadow - variants
+  --shadowSm: 0px 1px 2px 0px rgba(27, 28, 31, 0.05);
+  --shadowMd: 0px 1px 2px 0px rgba(27, 28, 31, 0.06),
+    0px 1px 3px 0px rgba(27, 28, 31, 0.1);
+  --shadowLg: 0px 2px 4px -2px rgba(27, 28, 31, 0.06),
+    0px 4px 8px -2px rgba(27, 28, 31, 0.1);
+
+  // typography
+
+  // headings
+  // h1 - group
+  .h1Lite {
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 5.625rem;
+  }
+
+  .h1Reg {
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5.625rem;
+  }
+
+  .h1Med {
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5.625rem;
+  }
+
+  .h1Semi {
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.625rem;
+  }
+
+  .h1Bold {
+    font-family: "Roboto";
+    font-size: 4.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.625rem;
+  }
+
+  // h2 - group
+  .h2Lite {
+    font-family: "Roboto";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 4.5rem;
+  }
+
+  .h2Reg {
+    font-family: "Roboto";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+  }
+
+  .h2Med {
+    font-family: "Roboto";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4.5rem;
+  }
+
+  .h2Semi {
+    font-family: "Roboto";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.5rem;
+  }
+
+  .h2Bold {
+    font-family: "Roboto";
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.5rem;
+  }
+
+  // h3 - group
+  .h3Lite {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3.75rem;
+  }
+
+  .h3Reg {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.75rem;
+  }
+
+  .h3Med {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.75rem;
+  }
+
+  .h3Semi {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 3.75rem;
+  }
+
+  .h3Bold {
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.75rem;
+  }
+
+  // h4 - group
+  .h4Lite {
+    font-family: "Roboto";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.75rem;
+  }
+
+  .h4Reg {
+    font-family: "Roboto";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.75rem;
+  }
+
+  .h4Med {
+    font-family: "Roboto";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.75rem;
+  }
+
+  .h4Semi {
+    font-family: "Roboto";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.75rem;
+  }
+
+  .h4Bold {
+    font-family: "Roboto";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.75rem;
+  }
+
+  // h5 - group
+  .h5Lite {
+    font-family: "Roboto";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.375rem;
+  }
+
+  .h5Reg {
+    font-family: "Roboto";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.375rem;
+  }
+
+  .h5Med {
+    font-family: "Roboto";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.375rem;
+  }
+
+  .h5Semi {
+    font-family: "Roboto";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.375rem;
+  }
+
+  .h5Bold {
+    font-family: "Roboto";
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2.375rem;
+  }
+
+  // h6 - group
+  .h6Lite {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2rem;
+  }
+
+  .h6Reg {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+  }
+
+  .h6Med {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+
+  .h6Semi {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .h6Bold {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+}
+
+// text
+// t1 - group
+.t1Lite {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem;
+}
+
+.t1Reg {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+
+.t1Med {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+.t1Semi {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+.t1Bold {
+  font-family: "Roboto";
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.875rem;
+}
+
+// t2 - group
+.t2Lite {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.75rem;
+}
+
+.t2Reg {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.t2Med {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.t2Semi {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.75rem;
+}
+
+.t2Bold {
+  font-family: "Roboto";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+// t3 - group
+.t3Lite {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.t3Reg {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.t3Med {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.t3Semi {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+.t3Bold {
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+// t4 - group
+.t4Lite {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+.t4Reg {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.t4Med {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.t4Semi {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.t4Bold {
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+}
+
+// t5 - group
+.t5Lite {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+.t5Reg {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.t5Med {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.125rem;
+}
+
+.t5Semi {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+.t5Bold {
+  font-family: "Roboto";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.125rem;
+}
+
+// icons
+
+// settings - icon
+.settingsIconSm {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  fill: #e2e3e6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23E2E3E6' /%3E%3C/svg%3E");
+}
+
+.settingsIconMed {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  fill: #e2e3e6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'%3E%3Ccircle cx='20' cy='20' r='20' fill='%23E2E3E6' /%3E%3C/svg%3E");
+}
+
+.settingsIconLg {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  fill: #e2e3e6;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23E2E3E6' /%3E%3C/svg%3E");
+}
+
+// check - icon
+.checkIconSm {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  fill: #dbe8ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32' fill='none'%3E%3Crect width='32' height='32' rx='16' fill='%23DBE8FF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.7953 9.85346L13.2487 19.0668L10.7153 16.3601C10.2487 15.9201 9.51534 15.8935 8.982 16.2668C8.462 16.6535 8.31534 17.3335 8.63534 17.8801L11.6353 22.7601C11.9287 23.2135 12.4353 23.4935 13.0087 23.4935C13.5553 23.4935 14.0753 23.2135 14.3687 22.7601C14.8487 22.1335 24.0087 11.2135 24.0087 11.2135C25.2087 9.9868 23.7553 8.9068 22.7953 9.84013V9.85346Z' fill='%230D62FF'/%3E%3C/svg%3E");
+}
+
+.checkIconMed {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  fill: #dbe8ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40' fill='none'%3E%3Crect width='40' height='40' rx='20' fill='%23DBE8FF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28.86 13.48L18.12 23.845L15.27 20.8C14.745 20.305 13.92 20.275 13.32 20.695C12.735 21.13 12.57 21.895 12.93 22.51L16.305 28C16.635 28.51 17.205 28.825 17.85 28.825C18.465 28.825 19.05 28.51 19.38 28C19.92 27.295 30.225 14.01 30.225 14.01C31.575 12.63 29.94 11.415 28.86 12.465V12.48Z' fill='%230D62FF'/%3E%3C/svg%3E");
+}
+
+.checkIconLg {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  fill: #dbe8ff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48' fill='none'%3E%3Crect width='48' height='48' rx='24' fill='%23DBE8FF'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M33.48 15.72L22.74 26.085L19.89 23.04C19.365 22.545 18.54 22.515 17.94 22.935C17.355 23.37 17.19 24.135 17.55 24.75L20.925 30.24C21.255 30.75 21.825 31.065 22.47 31.065C23.085 31.065 23.67 30.75 24 30.24C24.54 29.535 34.845 17.25 34.845 17.25C36.195 15.87 34.56 14.655 33.48 15.705V15.72Z' fill='%230D62FF'/%3E%3C/svg%3E");
+}
+
+// form controls - to be tweaked later
+
+// toggle - inactive
+// usage :
+//        <div classname="toggleInactive">
+//           <div classname="button"></div>
+//        </div>
+.toggleInactive {
+  display: flex;
+  width: 2.25rem;
+  height: 1.25rem;
+  padding: 0.125rem;
+  align-items: center;
+  border-radius: 0.75rem;
+  background: #e2e3e6;
+
+  .button {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    fill: #fff;
+    filter: drop-shadow(0rem 0.062rem 0.125rem rgba(16, 24, 40, 0.06))
+      drop-shadow(0rem 0.062rem 0.187rem rgba(16, 24, 40, 0.1));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg filter='url(%23filter0_dd_39_53785)'%3E%3Ccircle cx='10' cy='10' r='8' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_dd_39_53785' x='-1' y='0' width='22' height='22' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_39_53785'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='1.5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0'/%3E%3CfeBlend mode='normal' in2='effect1_dropShadow_39_53785' result='effect2_dropShadow_39_53785'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect2_dropShadow_39_53785' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  }
+}
+
+// toggle - active
+// usage :
+//        <div classname="toggleActive">
+//           <div classname="button"></div>
+//        </div>
+.toogleActive {
+  display: flex;
+  width: 2.25rem;
+  height: 1.25rem;
+  padding: 0.125rem;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 0.75rem;
+  background: #0d62ff;
+
+  .button {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
+    fill: #fff;
+    filter: drop-shadow(0rem 0.062rem 0.125rem rgba(16, 24, 40, 0.06))
+      drop-shadow(0rem 0.062rem 0.187rem rgba(16, 24, 40, 0.1));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21' height='20' viewBox='0 0 21 20' fill='none'%3E%3Cg filter='url(%23filter0_dd_38_513)'%3E%3Ccircle cx='11' cy='10' r='8' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_dd_38_513' x='0' y='0' width='22' height='22' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.06 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_38_513'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='1'/%3E%3CfeGaussianBlur stdDeviation='1.5'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0'/%3E%3CfeBlend mode='normal' in2='effect1_dropShadow_38_513' result='effect2_dropShadow_38_513'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect2_dropShadow_38_513' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E");
+  }
+}
+
+// checkbox - inactive
+.checkboxInactive {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 0.062rem solid #e2e3e6;
+  background: #fff;
+}
+
+// checkbox - hover
+.checkboxHover {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 0.062rem solid #0d62ff;
+  background: #fff;
+  box-shadow: 0rem 0rem 0rem 0.25rem #dbe8ff;
+}
+
+// checkbox - active
+// usage :
+//        <div classname="checkboxActive">
+//           <div classname="checkmark"></div>
+//        </div>
+.checkboxActive {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  padding: 0.125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  border: 0.062rem solid #0d62ff;
+  background: #fbfcff;
+
+  .checkmark {
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M10 3L4.5 8.5L2 6' stroke='%230D62FF' stroke-width='1.6666' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+}
+
+// radioBtn - inactive
+.radioBtnInactive {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  border: 0.062rem solid #e2e3e6;
+  background: #fff;
+}
+
+// radioBtn - hover
+.radioBtnHover {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.062rem solid #0d62ff;
+  background: #fff;
+  box-shadow: 0rem 0rem 0rem 0.25rem #dbe8ff;
+}
+
+// radioBtn - active
+// usage :
+//        <div classname="radioBtnActive">
+//           <div classname="dot"></div>
+//        </div>
+.radioBtnActive {
+  display: flex;
+  padding: 0.125rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 0.062rem solid #0d62ff;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+
+  .dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='5' fill='%230D62FF' /%3E%3C/svg%3E");
+  }
+}
+
+// buttons
+
+// primary buttons
+.primaryBtn {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  background: #0d62ff;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.primaryBtn:hover {
+  box-shadow: 0px 0px 0px 4px #dbe7ff;
+}
+
+.primaryBtn:active {
+  box-shadow: 0px 0px 0px 4px #dbe7ff;
+  background: #004ddd;
+}
+
+.primaryBtn[disabled] {
+  background: #e2e3e6;
+  border: 1px solid #e2e3e6;
+  color: #fff;
+}
+
+// secondary buttons
+.secondaryBtn {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: #303134;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
+  border: 1px solid #e2e3e6;
+}
+
+.secondaryBtn:hover {
+  border: 1px solid #0d62ff;
+}
+
+.secondaryBtn:active {
+  border: 1px solid #0d62ff;
+  box-shadow: 0px 0px 0px 4px #dbe7ff;
+}
+
+.secondaryBtn[disabled] {
+  color: #fff;
+  border: 1px solid #e2e3e6;
+  background: #e2e3e6;
+}
+
+// tertiary buttons
+.tertiaryBtn {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: #0d62ff;
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: white;
+}
+
+.tertiaryBtn:hover {
+  color: #0d62ff;
+  border: 1px solid #e2e3e6;
+}
+
+.tertiaryBtn:active {
+  color: #0d62ff;
+  border: 1px solid #e2e3e6;
+  background-color: #f0f1f4;
+}
+
+.tertiarybtn[disabled] {
+  color: #c6c7ca;
+}
+
+//  buttons w/h icons
+.btnWithLeftIcon {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--neutral90, #e2e3e6);
+  background: var(--neutral100, #fff);
+  color: var(--neutral20, #303134);
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.btnWithRightIcon {
+  display: flex;
+  padding: 0.75rem 1.5rem;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--neutral90, #e2e3e6);
+  background: var(--neutral100, #fff);
+  color: var(--neutral20, #303134);
+  font-family: "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+// button - group
+.btnGroup {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 0.25rem;
+  border: 0.0625rem solid var(--neutral90, #e2e3e6);
+
+  .btn {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+    color: var(--neutral20, #303134);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .btnSelected {
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-right: 1px solid var(--neutral90, #e2e3e6);
+    background: var(--neutral95, #f0f1f4);
+    color: var(--neutral20, #303134);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}
+
+// prev / next icons
+.navBtnGroup {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid var(--neutral90, #e2e3e6);
+
+  .btn {
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-right: 0.0625rem solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+  }
+}
+
+// modal-action button - group
+.modalActionBtnGroup {
+  display: flex;
+  width: 25rem;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  .cancelBtn {
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+    color: var(--neutral20, #303134);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .confirmBtn {
+    display: flex;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--primary50, #0d62ff);
+    background: var(--primary50, #0d62ff);
+    color: var(--neutral100, #fff);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}
