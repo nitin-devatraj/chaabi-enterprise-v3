@@ -9,7 +9,7 @@ function ButtonGroup(props) {
 
   return (
     <div className={styles.btnGroup}>
-      {props.buttons.map((item) => (
+      {props.buttons.map((item, index) => (
         <button
           className={`${styles.btn} ${
             selectedButton === item ? styles.selectedBtn : ""

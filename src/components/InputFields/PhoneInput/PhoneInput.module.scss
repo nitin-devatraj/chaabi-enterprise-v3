@@ -71,5 +71,12 @@
   }
 }
 
-// .helperText {
-// }
+.helperText {
+  color: var(--neutral20, #303134);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0rem;
+}

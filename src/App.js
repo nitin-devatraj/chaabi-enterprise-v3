@@ -10,61 +10,72 @@ import NavigationButtonGroup from "./components/Buttons/NavigationButtonGroup/Na
 import ModalActionButtons from "./components/Buttons/ModalActionButtons/ModalActionButtons";
 import EmailInput from "./components/InputFields/EmailInput/EmailInput";
 import PhoneInput from "./components/InputFields/PhoneInput/PhoneInput";
+import TogglePairButtons from "./components/Buttons/TogglePairButtons/TogglePairButtons";
 
 function App() {
   return (
     <div className="app-container">
-      <p>
+      <div>
         primary button : <PrimaryButton>button</PrimaryButton>
-      </p>
+      </div>
 
-      <p>
+      <div>
         secondary button : <SecondaryButton>button</SecondaryButton>
-      </p>
+      </div>
 
-      <p>
+      <div>
         tertiary button : <TertiaryButton>button</TertiaryButton>
-      </p>
+      </div>
 
-      <p>
+      <div>
         btn w/th left icon :{" "}
         <ButtonWithLeftIcon>
           <img src={uploadIcon} alt="#" />
           import
         </ButtonWithLeftIcon>
-      </p>
+      </div>
 
-      <p>
+      <div>
         btn w/th right icon :{" "}
         <ButtonWithRightIcon>
           <img src={cancelIcon} alt="#" />
           all time
         </ButtonWithRightIcon>
-      </p>
+      </div>
 
-      <p>
+      <div>
         btn group : <ButtonGroup buttons={["btn1", "btn2", "btn3", "btn4"]} />
-      </p>
-      <p>
+      </div>
+      <div>
         Previous next icons : <NavigationButtonGroup />
-      </p>
+      </div>
 
-      <p>
+      <div>
         modal buttons :{" "}
         <ModalActionButtons
           primaryButtonText="confirm"
           secondaryButtonText="cancel"
         />
-      </p>
+      </div>
 
-      <p>
+      <div>
         email - input :{" "}
         <EmailInput label="Email" helperText="this is some text hint" />
-      </p>
+      </div>
 
-      <p>
-        phone - input : <PhoneInput label="Phone number" />
-      </p>
+      <div>
+        phone - input :{" "}
+        <PhoneInput label="Phone number" helperText="this is some text hint" />
+      </div>
+
+      <div>
+        toggle pair button :{" "}
+        <TogglePairButtons
+          label="Gender"
+          firstButton="male"
+          secondButton="female"
+        />
+      </div>
     </div>
   );
 }
