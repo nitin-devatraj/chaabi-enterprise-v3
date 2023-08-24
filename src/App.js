@@ -11,6 +11,8 @@ import ModalActionButtons from "./components/Buttons/ModalActionButtons/ModalAct
 import EmailInput from "./components/InputFields/EmailInput/EmailInput";
 import PhoneInput from "./components/InputFields/PhoneInput/PhoneInput";
 import TogglePairButtons from "./components/Buttons/TogglePairButtons/TogglePairButtons";
+import FileInput from "./components/InputFields/FileInput/FileInput";
+import cloudIcon from "./assets/icons/cloud-upload-icon.svg";
 
 function App() {
   return (
@@ -74,6 +76,15 @@ function App() {
           label="Gender"
           firstButton="male"
           secondButton="female"
+        />
+      </div>
+
+      <div>
+        file - input :{" "}
+        <FileInput
+          iconSource={cloudIcon}
+          supportingText="SVG, PNG, JPG or GIF (max. 800x400px)"
+          accept="*"
         />
       </div>
     </div>
