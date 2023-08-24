@@ -13,6 +13,8 @@ import PhoneInput from "./components/InputFields/PhoneInput/PhoneInput";
 import TogglePairButtons from "./components/Buttons/TogglePairButtons/TogglePairButtons";
 import FileInput from "./components/InputFields/FileInput/FileInput";
 import cloudIcon from "./assets/icons/cloud-upload-icon.svg";
+import TabGroup from "./components/TabGroup/TabGroup";
+import TextInput from "./components/InputFields/TextInput/TextInput";
 
 function App() {
   return (
@@ -86,6 +88,13 @@ function App() {
           supportingText="SVG, PNG, JPG or GIF (max. 800x400px)"
           accept="*"
         />
+      </div>
+      <div>
+        tab - group : <TabGroup tabs={["tab1", "tab2", "tab3", "tab4"]} />
+      </div>
+
+      <div>
+        text - input : <TextInput />
       </div>
     </div>
   );

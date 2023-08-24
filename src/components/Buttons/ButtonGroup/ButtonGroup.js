@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ButtonGroup.module.scss";
 
-function ButtonGroup(props) {
+function ButtonGroup({ buttons }) {
   const [selectedButton, setSelectedButton] = useState(null);
   function buttonClickHandler(event) {
     setSelectedButton(event.target.id);
@@ -9,11 +9,9 @@ function ButtonGroup(props) {
 
   return (
     <div className={styles.btnGroup}>
-      {props.buttons.map((item, index) => (
+      {buttons.map((item) => (
         <button
-          className={`${styles.btn} ${
-            selectedButton === item ? styles.selectedBtn : ""
-          }`}
+          className={selectedButton === item ? styles.selectedBtn : styles.btn}
           key={item}
           id={item}
           onClick={buttonClickHandler}
