@@ -1,0 +1,90 @@
+.selectInputContainer {
+  display: inline-flex;
+  width: 320px;
+  flex-direction: column;
+  position: relative;
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+
+    .label {
+      color: var(--neutral50, #75777a);
+      font-family: Roboto;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 20px;
+    }
+
+    .input {
+      display: flex;
+      align-self: stretch;
+      padding: 12px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      flex: 1 0 0;
+      border-radius: 4px;
+      border: 1px solid var(--neutral90, #e2e3e6);
+      background: var(--neutral100, #fff);
+      color: var(--neutral20, #303134);
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+  .dropDownContainer {
+    position: absolute;
+    top: 76px;
+    z-index: 1;
+    width: 100%;
+    display: inline-flex;
+    max-height: 220px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+    padding: 4px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0;
+    overflow-y: auto;
+
+    .dropDownItem {
+      display: flex;
+      padding: 12px 16px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      align-self: stretch;
+      background-color: #fff;
+      color: var(--neutral20, #303134);
+      font-family: "Roboto";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 24px;
+
+      .hoverSVG {
+        display: none;
+      }
+    }
+
+    .dropDownItem:hover {
+      background: var(--neutral99, #fbfcff);
+      color: var(--neutral20, #303134);
+      font-weight: 500;
+    }
+
+    .dropDownItem:hover .hoverSVG {
+      display: inline-block;
+    }
+  }
+}

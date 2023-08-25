@@ -16,6 +16,7 @@ import cloudIcon from "./assets/icons/cloud-upload-icon.svg";
 import TabGroup from "./components/TabGroup/TabGroup";
 import TextInput from "./components/InputFields/TextInput/TextInput";
 import Accordian from "./components/Accordian/Accordian";
+import SelectInput from "./components/InputFields/SelectInput/SelectInput";
 
 function App() {
   return (
@@ -96,6 +97,23 @@ function App() {
 
       <div>
         text - input : <TextInput />
+      </div>
+
+      <hr />
+
+      <div>
+        select - input :{" "}
+        <SelectInput
+          options={[
+            "gurgoan",
+            "bombay",
+            "hyd",
+            "calcutta",
+            "bombay",
+            "hyd",
+            "calcutta",
+          ]}
+        />
       </div>
 
       <div>
