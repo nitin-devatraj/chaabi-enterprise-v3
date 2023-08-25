@@ -2,11 +2,11 @@ import React from "react";
 import styles from "./Notifications.module.scss";
 import NotificationItem from "./NotificationItem/NotificationItem";
 
-function Notifications({ tabs }) {
+function Notifications({ notificationItems }) {
   return (
     <div className={styles.notificationContainer}>
-      {tabs.map((item) => (
-        <NotificationItem item={item} />
+      {notificationItems.map((item, index) => (
+        <NotificationItem item={item} key={index} />
       ))}
     </div>
   );
