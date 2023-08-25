@@ -208,7 +208,7 @@ function App() {
       </div>
 
       <div>
-        table - <Table columnNames={columnNames} tableRows={tableRows} />
+        table (TBC)- <Table columnNames={columnNames} tableRows={tableRows} />
       </div>
     </div>
   );
