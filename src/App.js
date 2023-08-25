@@ -99,11 +99,12 @@ function App() {
       </div>
 
       <div>
-        accordian - to be continued :{" "}
+        accordian :{" "}
         <Accordian
           tabs={[
-            { title: "Accordian title", children: ["lorem ipsum dolor"] },
-            { title: "Accordian title", children: ["lorem ipsum dolor"] },
+            "Accordian title - 1",
+            "Accordian title - 2",
+            "Accordian title - 3",
           ]}
         />
       </div>
