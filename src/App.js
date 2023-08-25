@@ -17,6 +17,7 @@ import TabGroup from "./components/TabGroup/TabGroup";
 import TextInput from "./components/InputFields/TextInput/TextInput";
 import Accordian from "./components/Accordian/Accordian";
 import SelectInput from "./components/InputFields/SelectInput/SelectInput";
+import Notifications from "./components/Notifications/Notifications";
 
 function App() {
   return (
@@ -123,6 +124,38 @@ function App() {
             "Accordian title - 1",
             "Accordian title - 2",
             "Accordian title - 3",
+          ]}
+        />
+      </div>
+
+      <div>
+        notification :{" "}
+        <Notifications
+          tabs={[
+            {
+              title: "modal window",
+              content:
+                "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
+              type: "alert",
+            },
+            {
+              title: "modal window",
+              content:
+                "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
+              type: "success",
+            },
+            {
+              title: "modal window",
+              content:
+                "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
+              type: "warning",
+            },
+            {
+              title: "modal window",
+              content:
+                "When you do something noble and beautiful and nobody noticed, do not be sad. For the sun every morning is a beautiful spectacle and yet most of the audience still sleeps.",
+              type: "info",
+            },
           ]}
         />
       </div>
