@@ -1,20 +1,38 @@
 import React from "react";
 import styles from "./PhoneInput.module.scss";
 import { ReactComponent as DownArrow } from "../../../assets/icons/chevron-down.svg";
+import { useSelector } from "react-redux";
 
 function PhoneInput(props) {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
+
   return (
     <div className={styles.phoneInputContainer}>
-      <label htmlFor="phone-input" className={styles.label}>
+      <label
+        htmlFor="phone-input"
+        className={isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme}
+      >
         {props.label}
       </label>
 
-      <div className={styles.inputContainer}>
-        <div className={styles.dropdown}>
+      <div
+        className={
+          isDarkMode
+            ? styles.inputContainerDarkTheme
+            : styles.inputContainerLightTheme
+        }
+      >
+        <div
+          className={
+            isDarkMode ? styles.dropdownDarkTheme : styles.dropdownLightTheme
+          }
+        >
           IN <DownArrow />
         </div>
         <input
-          className={styles.input}
+          className={
+            isDarkMode ? styles.inputDarkTheme : styles.inputLightTheme
+          }
           type="tel"
           name="phone-input"
           id="phone-input"
@@ -23,17 +41,13 @@ function PhoneInput(props) {
           placeholder={props.placeholder}
         />
       </div>
-
-      {/* <input
-        className={styles.input}
-        type="tel"
-        name="phone-input"
-        id="phone-input"
-        disabled={props.disabled}
-        required={props.required}
-        placeholder={props.placeholder}
-      /> */}
-      <p className={styles.helperText}>{props.helperText}</p>
+      <p
+        className={
+          isDarkMode ? styles.helperTextDarkTheme : styles.helperTextLightTheme
+        }
+      >
+        {props.helperText}
+      </p>
     </div>
   );
 }
