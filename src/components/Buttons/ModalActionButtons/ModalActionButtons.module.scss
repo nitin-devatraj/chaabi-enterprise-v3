@@ -1,10 +1,10 @@
-.modalActionBtnGroup {
+.modalActionBtnsLightTheme {
   display: inline-flex;
   width: auto;
   align-items: flex-start;
   gap: 0.75rem;
 
-  .secondaryBtn {
+  .secondaryBtnLightTheme {
     cursor: pointer;
     display: flex;
     padding: 0.75rem 3rem;
@@ -23,7 +23,52 @@
     line-height: 1.5rem;
   }
 
-  .primaryBtn {
+  .primaryBtnLightTheme {
+    cursor: pointer;
+    display: flex;
+    padding: 0.75rem 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--primary50, #0d62ff);
+    background: var(--primary50, #0d62ff);
+    color: var(--neutral100, #fff);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+  }
+}
+
+.modalActionBtnsDarkTheme {
+  display: inline-flex;
+  width: auto;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  .secondaryBtnDarkTheme {
+    cursor: pointer;
+    display: flex;
+    padding: 0.75rem 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid var(--neutral99);
+    background: transparent;
+    color: var(--neutral99, #fbfcff);
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  .primaryBtnDarkTheme {
     cursor: pointer;
     display: flex;
     padding: 0.75rem 3rem;

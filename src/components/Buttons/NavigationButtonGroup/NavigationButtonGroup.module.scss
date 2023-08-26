@@ -1,10 +1,11 @@
-.navBtnGroup {
+.navBtnGroupLightTheme {
   display: inline-flex;
   align-items: flex-start;
   border-radius: 0.5rem;
   border: 0.0625rem solid var(--neutral90, #e2e3e6);
+  overflow: hidden;
 
-  .btn {
+  .btnLightTheme {
     display: flex;
     cursor: pointer;
     padding: 0.75rem 1.5rem;
@@ -12,6 +13,25 @@
     align-items: center;
     gap: 0.5rem;
     border: 0.0625rem solid var(--neutral90, #e2e3e6);
+    background: var(--neutral100, #fff);
+  }
+}
+
+.navBtnGroupDarkTheme {
+  display: inline-flex;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  border: 0.0625rem solid transparent;
+  overflow: hidden;
+
+  .btnDarkTheme {
+    display: flex;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 0.0625rem solid transparent;
     background: var(--neutral100, #fff);
   }
 }
