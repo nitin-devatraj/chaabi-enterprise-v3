@@ -1,0 +1,29 @@
+// shadow - variants - light theme
+.shadowSmLightTheme {
+  box-shadow: 0px 1px 2px 0px rgba(27, 28, 31, 0.05);
+}
+
+.shadowMdLightTheme {
+  box-shadow: 0px 1px 2px 0px rgba(27, 28, 31, 0.06),
+    0px 1px 3px 0px rgba(27, 28, 31, 0.1);
+}
+
+.shadowLgLightTheme {
+  box-shadow: 0px 2px 4px -2px rgba(27, 28, 31, 0.06),
+    0px 4px 8px -2px rgba(27, 28, 31, 0.1);
+}
+
+// shadow - variants - dark theme
+.shadowSmDarkTheme {
+  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.25);
+}
+
+.shadowMdDarkTheme {
+  box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.4),
+    0px 1px 3px 0px rgba(255, 255, 255, 0.4);
+}
+
+.shadowLgDarkTheme {
+  box-shadow: 0px 1px 2px -2px rgba(255, 255, 255, 0.5),
+    0px 3px 6px 0px rgba(255, 255, 255, 0.4);
+}

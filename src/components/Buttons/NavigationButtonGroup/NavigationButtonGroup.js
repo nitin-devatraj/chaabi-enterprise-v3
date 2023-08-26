@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NavigationButtonGroup.module.scss";
-import classes from "../../../global-styles/styles.module.scss";
+import classes from "../../../global-styles/typography.module.scss";
 import { useSelector } from "react-redux";
 
 function NavigationButtonGroup() {
