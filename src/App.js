@@ -97,25 +97,124 @@ function App() {
 
   const tableRows = [
     {
-      name: "Olivia Rhye",
+      id: 1,
+      name: "John Smith",
       status: "active",
-      role: "Product Designer",
-      email: "olivia@untitledui.com",
-      teams: ["Design", "Product", "Marketing", "sales", "abc", "xyz"],
+      role: "Software Engineer",
+      email: "john.smith@example.com",
+      teams: ["Engineering", "Product", "Development"],
     },
     {
-      name: "Olivia Rhye",
+      id: 2,
+      name: "Jane Doe",
       status: "inactive",
-      role: "Product Designer",
-      email: "olivia@untitledui.com",
-      teams: ["Design", "Product", "Marketing", "sales", "abc", "xyz"],
+      role: "UX Designer",
+      email: "jane.doe@example.com",
+      teams: ["Design", "Product"],
     },
     {
-      name: "Olivia Rhye",
+      id: 3,
+      name: "Michael Johnson",
       status: "draft",
-      role: "Product Designer",
-      email: "olivia@untitledui.com",
-      teams: ["Design", "Product", "Marketing", "sales", "abc", "xyz"],
+      role: "Product Manager",
+      email: "michael.johnson@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
+    },
+    {
+      id: 4,
+      name: "Emily Williams",
+      status: "active",
+      role: "Frontend Developer",
+      email: "emily.williams@example.com",
+      teams: ["Engineering", "Development"],
+    },
+    {
+      id: 5,
+      name: "William Davis",
+      status: "inactive",
+      role: "UI Designer",
+      email: "william.davis@example.com",
+      teams: ["Design", "Product"],
+    },
+    {
+      id: 6,
+      name: "Sophia Wilson",
+      status: "draft",
+      role: "Marketing Specialist",
+      email: "sophia.wilson@example.com",
+      teams: ["Marketing", "Sales"],
+    },
+    {
+      id: 7,
+      name: "Alexander Martinez",
+      status: "active",
+      role: "Backend Developer",
+      email: "alexander.martinez@example.com",
+      teams: ["Engineering", "Development", "QA"],
+    },
+    {
+      id: 8,
+      name: "Emma Brown",
+      status: "inactive",
+      role: "UX Designer",
+      email: "emma.brown@example.com",
+      teams: ["Design"],
+    },
+    {
+      id: 9,
+      name: "Daniel Jones",
+      status: "draft",
+      role: "Product Manager",
+      email: "daniel.jones@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
+    },
+    {
+      id: 10,
+      name: "Olivia Taylor",
+      status: "active",
+      role: "Full Stack Developer",
+      email: "olivia.taylor@example.com",
+      teams: ["Engineering", "Development", "QA"],
+    },
+    {
+      id: 11,
+      name: "Liam Jackson",
+      status: "inactive",
+      role: "UI Designer",
+      email: "liam.jackson@example.com",
+      teams: ["Design", "Product"],
+    },
+    {
+      id: 12,
+      name: "Ava White",
+      status: "draft",
+      role: "Marketing Specialist",
+      email: "ava.white@example.com",
+      teams: ["Marketing", "Sales", "Analytics"],
+    },
+    {
+      id: 13,
+      name: "Noah Martinez",
+      status: "active",
+      role: "Backend Developer",
+      email: "noah.martinez@example.com",
+      teams: ["Engineering", "Development"],
+    },
+    {
+      id: 14,
+      name: "Isabella Davis",
+      status: "inactive",
+      role: "UX Designer",
+      email: "isabella.davis@example.com",
+      teams: ["Design", "Product"],
+    },
+    {
+      id: 15,
+      name: "Mason Wilson",
+      status: "draft",
+      role: "Product Manager",
+      email: "mason.wilson@example.com",
+      teams: ["Product", "Sales", "Marketing", "Analytics"],
     },
   ];
 
@@ -208,7 +307,7 @@ function App() {
       </div>
 
       <div>
-        table (TBC)- <Table columnNames={columnNames} tableRows={tableRows} />
+        table (TBC) : <Table columnNames={columnNames} tableRows={tableRows} />
       </div>
     </div>
   );

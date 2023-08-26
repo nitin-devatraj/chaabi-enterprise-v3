@@ -1,3 +1,5 @@
+@import "../../../global-styles/variables.scss";
+
 .tableItem {
   border-bottom: 1px solid var(--neutral90, #e2e3e6);
 
@@ -41,18 +43,37 @@
   }
 
   td {
-    height: 64px;
-    padding: 16px 24px;
+    height: 4rem;
+    padding: 1rem 1.5rem;
     color: var(--neutral40, #5e5f62);
     font-family: "Roboto", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5rem;
   }
 
   .nameColumn {
     width: 24%;
+    .name {
+      input {
+        border: none;
+        color: var(--neutral40, #5e5f62);
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      .requiredMessage {
+        color: var(--alert50, #f04438);
+      }
+    }
   }
 
   .statusColumn {
@@ -72,6 +93,7 @@
 
     .badges {
       display: flex;
+      align-items: center;
       gap: 4px;
 
       .badgeGroup1 {
@@ -87,6 +109,16 @@
       .badgeGroup5 {
         color: var(--badgeColorMain5, #00acc1);
         background: var(--badgeColorBack5, #e0f7fa);
+      }
+
+      .remainingCount {
+        color: var(--neutral30, #46474a);
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.125rem;
       }
     }
   }
