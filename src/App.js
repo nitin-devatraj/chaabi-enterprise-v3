@@ -19,6 +19,7 @@ import Accordian from "./components/Accordian/Accordian";
 import SelectInput from "./components/InputFields/SelectInput/SelectInput";
 import Notifications from "./components/Notifications/Notifications";
 import Table from "./components/Table/Table";
+import ToggleButton from "./components/Buttons/ToggleButton/ToggleButton";
 
 function App() {
   const notificationItems = [
@@ -307,7 +308,11 @@ function App() {
       </div>
 
       <div>
-        table (TBC) : <Table columnNames={columnNames} tableRows={tableRows} />
+        table : <Table columnNames={columnNames} tableRows={tableRows} />
+      </div>
+
+      <div>
+        toggle : <ToggleButton />
       </div>
     </div>
   );
