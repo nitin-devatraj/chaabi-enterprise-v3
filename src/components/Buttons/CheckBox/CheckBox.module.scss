@@ -1,0 +1,21 @@
+.checkBox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.25rem;
+  border: 0.062rem solid #e2e3e6;
+  background: #fff;
+
+  .checkBoxIcon {
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+  }
+}
+
+.checkBox:hover {
+  border: 0.062rem solid #0d62ff;
+  box-shadow: 0rem 0rem 0rem 0.25rem #dbe8ff;
+}

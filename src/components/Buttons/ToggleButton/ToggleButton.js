@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "./ToggleButton.module.scss";
-import { ReactComponent as ToggleButtonIcon } from "../../../assets/icons/toggle-button-icon.svg";
+import { ReactComponent as ToggleButtonIcon } from "../../../assets/icons/button-icons/toggle-button-icon.svg";
 
 function ToggleButton() {
   const [isToggleActive, setIsToggleActive] = useState(false);

@@ -20,6 +20,8 @@ import SelectInput from "./components/InputFields/SelectInput/SelectInput";
 import Notifications from "./components/Notifications/Notifications";
 import Table from "./components/Table/Table";
 import ToggleButton from "./components/Buttons/ToggleButton/ToggleButton";
+import RadioButton from "./components/Buttons/RadioButton/RadioButton";
+import CheckBox from "./components/Buttons/CheckBox/CheckBox";
 
 function App() {
   const notificationItems = [
@@ -313,6 +315,14 @@ function App() {
 
       <div>
         toggle : <ToggleButton />
+      </div>
+
+      <div>
+        radio - button : <RadioButton />
+      </div>
+
+      <div>
+        checkBox - <CheckBox />
       </div>
     </div>
   );

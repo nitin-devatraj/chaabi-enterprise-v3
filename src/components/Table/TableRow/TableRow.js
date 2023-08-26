@@ -6,6 +6,7 @@ import { ReactComponent as DraftIcon } from "../../../assets/icons/table-icons/d
 import { ReactComponent as DeleteIcon } from "../../../assets/icons/table-icons/delete-icon.svg";
 import { ReactComponent as EditIcon } from "../../../assets/icons/table-icons/edit-icon.svg";
 import globalStyles from "../../../global-styles/styles.module.scss";
+import ToggleButton from "../../Buttons/ToggleButton/ToggleButton";
 
 function TableItem({ item, onDelete }) {
   const firstThreeBadges = item.teams.slice(0, 3);
@@ -45,26 +46,29 @@ function TableItem({ item, onDelete }) {
   return (
     <tr className={styles.tableItem}>
       <td className={styles.nameColumn}>
-        {isEditing ? (
-          <div className={styles.name}>
-            <input
-              type="text"
-              value={editedName}
-              onChange={handleNameChange}
-              onBlur={handleNameBlur}
-              onKeyDown={handleInputKeyDown}
-            />
-            {isNameEmpty && (
-              <div
-                className={`${styles.requiredMessage} ${globalStyles.t5Lite}`}
-              >
-                required
-              </div>
-            )}
-          </div>
-        ) : (
-          editedName
-        )}
+        <div>
+          <ToggleButton />
+          {isEditing ? (
+            <div className={styles.name}>
+              <input
+                type="text"
+                value={editedName}
+                onChange={handleNameChange}
+                onBlur={handleNameBlur}
+                onKeyDown={handleInputKeyDown}
+              />
+              {isNameEmpty && (
+                <div
+                  className={`${styles.requiredMessage} ${globalStyles.t5Lite}`}
+                >
+                  required
+                </div>
+              )}
+            </div>
+          ) : (
+            editedName
+          )}
+        </div>
       </td>
       <td className={styles.statusColumn}>
         <div
