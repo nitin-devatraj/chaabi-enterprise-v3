@@ -1,30 +1,62 @@
-.tertiaryBtn {
+.tertiaryBtnLightTheme {
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: #0d62ff;
+  color: var(--primary50);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  border: 1px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tertiaryBtnLightTheme:not(:disabled):hover {
+  border: 1px solid var(--neutral80);
+}
+
+.tertiaryBtnLightTheme:not(:disabled):active {
+  color: var(--primary50);
+  border: 1px solid var(--neutral80);
+  background-color: var(--neutral90);
+}
+
+.tertiaryBtnLightTheme[disabled] {
+  color: var(--neutral70);
+  cursor: not-allowed;
+}
+
+.tertiaryBtnDarkTheme {
+  display: inline-flex;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  color: var(--primary99);
   font-family: "Roboto";
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid #fff;
-  background-color: white;
+  border: 1px solid transparent;
+  background-color: transparent;
   cursor: pointer;
 }
 
-.tertiaryBtn:not(:disabled):hover {
-  color: #0d62ff;
-  border: 1px solid #e2e3e6;
+.tertiaryBtnDarkTheme:not(:disabled):hover {
+  border: 1px solid var(--primary99);
 }
 
-.tertiaryBtn:not(:disabled):active {
-  color: #0d62ff;
-  border: 1px solid #e2e3e6;
-  background-color: #f0f1f4;
+.tertiaryBtnDarkTheme:not(:disabled):active {
+  color: var(--primary50);
+  border: 1px solid var(--primary99);
+  background-color: var(--primary99);
 }
 
-.tertiaryBtn[disabled] {
-  color: #c6c7ca;
+.tertiaryBtnDarkTheme[disabled] {
+  color: var(--neutral90);
+  background: var(--neutral20);
+  cursor: not-allowed;
 }

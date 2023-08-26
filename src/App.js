@@ -22,8 +22,13 @@ import Table from "./components/Table/Table";
 import ToggleButton from "./components/Buttons/ToggleButton/ToggleButton";
 import RadioButton from "./components/Buttons/RadioButton/RadioButton";
 import CheckBox from "./components/Buttons/CheckBox/CheckBox";
+import colorTheme from "./global-styles/color-theme.module.scss";
+import ThemeToggleButton from "./components/Buttons/ThemeToggleButton/ThemeToggleButton";
+import { useSelector } from "react-redux";
 
 function App() {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
+
   const notificationItems = [
     {
       title: "modal window",
@@ -232,9 +237,16 @@ function App() {
   ];
 
   return (
-    <div className="app-container">
-      <div>
-        primary button : <PrimaryButton>button</PrimaryButton>
+    <div
+      className={`app-container ${
+        isDarkMode ? colorTheme.darkThemeLowest : colorTheme.lightThemeLowest
+      }`}
+    >
+      <div className="theme-toggle-container">
+        <div>
+          primary button : <PrimaryButton>button</PrimaryButton>
+        </div>
+        <ThemeToggleButton />
       </div>
 
       <div>
