@@ -1,32 +1,33 @@
-import ButtonWithLeftIcon from "./components/Buttons/ButtonWithLeftIcon/ButtonWithLeftIcon";
-import ButtonWithRightIcon from "./components/Buttons/ButtonWithRightIcon/ButtonWithRightIcon";
-import PrimaryButton from "./components/Buttons/PrimaryButton/PrimaryButton";
-import SecondaryButton from "./components/Buttons/SecondaryButton/SecondaryButton";
-import TertiaryButton from "./components/Buttons/TertiaryButton/TertiaryButton";
-import uploadIcon from "./assets/icons/upload-icon.svg";
-import cancelIcon from "./assets/icons/cancel-icon.svg";
-import ButtonGroup from "./components/Buttons/ButtonGroup/ButtonGroup";
-import NavigationButtonGroup from "./components/Buttons/NavigationButtonGroup/NavigationButtonGroup";
-import ModalActionButtons from "./components/Buttons/ModalActionButtons/ModalActionButtons";
-import EmailInput from "./components/InputFields/EmailInput/EmailInput";
-import PhoneInput from "./components/InputFields/PhoneInput/PhoneInput";
-import TogglePairButtons from "./components/Buttons/TogglePairButtons/TogglePairButtons";
-import FileInput from "./components/InputFields/FileInput/FileInput";
-import cloudIcon from "./assets/icons/cloud-upload-icon.svg";
-import TabGroup from "./components/TabGroup/TabGroup";
-import TextInput from "./components/InputFields/TextInput/TextInput";
-import Accordian from "./components/Accordian/Accordian";
-import SelectInput from "./components/InputFields/SelectInput/SelectInput";
-import Notifications from "./components/Notifications/Notifications";
-import Table from "./components/Table/Table";
-import ToggleButton from "./components/Buttons/ToggleButton/ToggleButton";
-import RadioButton from "./components/Buttons/RadioButton/RadioButton";
-import CheckBox from "./components/Buttons/CheckBox/CheckBox";
-import colorTheme from "./global-styles/color-theme.module.scss";
-import ThemeToggleButton from "./components/Buttons/ThemeToggleButton/ThemeToggleButton";
+import ButtonWithLeftIcon from "../../components/Buttons/ButtonWithLeftIcon/ButtonWithLeftIcon";
+import ButtonWithRightIcon from "../../components/Buttons/ButtonWithRightIcon/ButtonWithRightIcon";
+import PrimaryButton from "../../components/Buttons/PrimaryButton/PrimaryButton";
+import SecondaryButton from "../../components/Buttons/SecondaryButton/SecondaryButton";
+import TertiaryButton from "../../components/Buttons/TertiaryButton/TertiaryButton";
+import uploadIcon from "../../assets/icons/upload-icon.svg";
+import cancelIcon from "../../assets/icons/cancel-icon.svg";
+import ButtonGroup from "../../components/Buttons/ButtonGroup/ButtonGroup";
+import NavigationButtonGroup from "../../components/Buttons/NavigationButtonGroup/NavigationButtonGroup";
+import ModalActionButtons from "../../components/Buttons/ModalActionButtons/ModalActionButtons";
+import EmailInput from "../../components/InputFields/EmailInput/EmailInput";
+import PhoneInput from "../../components/InputFields/PhoneInput/PhoneInput";
+import TogglePairButtons from "../../components/Buttons/TogglePairButtons/TogglePairButtons";
+import FileInput from "../../components/InputFields/FileInput/FileInput";
+import cloudIcon from "../../assets/icons/cloud-upload-icon.svg";
+import TabGroup from "../../components/TabGroup/TabGroup";
+import TextInput from "../../components/InputFields/TextInput/TextInput";
+import Accordian from "../../components/Accordian/Accordian";
+import SelectInput from "../../components/InputFields/SelectInput/SelectInput";
+import Notifications from "../../components/Notifications/Notifications";
+import Table from "../../components/Table/Table";
+import ToggleButton from "../../components/Buttons/ToggleButton/ToggleButton";
+import RadioButton from "../../components/Buttons/RadioButton/RadioButton";
+import CheckBox from "../../components/Buttons/CheckBox/CheckBox";
+import colorTheme from "../../global-styles/color-theme.module.scss";
+
+import ThemeToggleButton from "../../components/Buttons/ThemeToggleButton/ThemeToggleButton";
 import { useSelector } from "react-redux";
 
-function App() {
+function Components() {
   const isDarkMode = useSelector((state) => state.theme.darkMode);
 
   const notificationItems = [
@@ -238,7 +239,7 @@ function App() {
 
   return (
     <div
-      className={`app-container ${
+      className={`components-container ${
         isDarkMode ? colorTheme.darkThemeLowest : colorTheme.lightThemeLowest
       }`}
     >
@@ -340,4 +341,4 @@ function App() {
   );
 }
 
-export default App;
+export default Components;
