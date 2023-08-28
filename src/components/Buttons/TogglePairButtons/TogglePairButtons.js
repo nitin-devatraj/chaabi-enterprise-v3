@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styles from "./TogglePairButtons.module.scss";
+import { useSelector } from "react-redux";
 
 function TogglePairButtons(props) {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
   const [selectedBtn, setSelectedBtn] = useState("first-button");
 
   function buttonClickHandler(event) {
@@ -10,7 +12,11 @@ function TogglePairButtons(props) {
 
   return (
     <div className={styles.togglePairButtonsContainer}>
-      <label className={styles.label}>{props.label}</label>
+      <label
+        className={isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme}
+      >
+        {props.label}
+      </label>
       <div className={styles.buttonGroup}>
         <button
           className={

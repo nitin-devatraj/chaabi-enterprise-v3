@@ -3,8 +3,10 @@ import styles from "./SelectInput.module.scss";
 import { ReactComponent as ArrowRightIcon } from "../../../assets/icons/arrow-right.svg";
 import { ReactComponent as ArrowDownIcon } from "../../../assets/icons/arrow-down.svg";
 import { ReactComponent as CheckIcon } from "../../../assets/icons/check-icon.svg";
+import { useSelector } from "react-redux";
 
 function SelectInput({ options }) {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(options[0]);
   const dropDownRef = useRef();
@@ -35,7 +37,12 @@ function SelectInput({ options }) {
   return (
     <div className={styles.selectInputContainer}>
       <div className={styles.inputContainer}>
-        <label htmlFor="select-input" className={styles.label}>
+        <label
+          htmlFor="select-input"
+          className={
+            isDarkMode ? styles.labelDarkTheme : styles.labelLightTheme
+          }
+        >
           city
         </label>
         <div

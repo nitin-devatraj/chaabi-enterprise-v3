@@ -6,12 +6,31 @@ import { ReactComponent as Ellipse } from "../assets/icons/layout-icons/ellipse.
 import BrandLogo from "../assets/icons/layout-icons/chaabi-icon.svg";
 import NavItem from "./NavItem/NavItem";
 import { Outlet } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Layout() {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
+
   return (
     <div className={styles.layoutContainer}>
+      <section
+        className={
+          isDarkMode ? styles.sidebarDarkTheme : styles.sidebarLightTheme
+        }
+      >
+        <div className={styles.logoContainer}>
+          <img src={BrandLogo} alt="#" className={styles.logo} />
+        </div>
+        <nav className={styles.nav}>
+          <NavItem />
+        </nav>
+      </section>
       <div className={styles.rightHandSection}>
-        <header className={styles.header}>
+        <header
+          className={
+            isDarkMode ? styles.headerDarkTheme : styles.headerLightTheme
+          }
+        >
           <div className={styles.content}>
             <h4 className={typography.h4Med}>Hello, Puneet Dhiman</h4>
             <p className={typography.t1Lite}>Welcome to your Dashboard</p>
@@ -27,14 +46,6 @@ function Layout() {
           <Outlet />
         </section>
       </div>
-      <section className={styles.sidebar}>
-        <div className={styles.logoContainer}>
-          <img src={BrandLogo} alt="#" className={styles.logo} />
-        </div>
-        <nav className={styles.nav}>
-          <NavItem />
-        </nav>
-      </section>
     </div>
   );
 }

@@ -3,24 +3,24 @@
   height: 100vh;
   display: flex;
   align-items: flex-start;
-  flex-direction: row-reverse;
+  flex-direction: row;
 
   .rightHandSection {
-    width: 84%;
+    width: 85vw;
     display: flex;
     flex-direction: column;
   }
 
-  .header {
-    width: 100%;
+  .headerLightTheme {
+    width: 85vw;
     height: 7%;
-    background: var(--neutral100);
     display: flex;
     align-items: center;
     padding: 12px 36px;
+    background: var(--neutral100);
 
     .content {
-      width: 70%;
+      width: 60%;
       display: inline-flex;
       flex-direction: column;
       gap: 4px;
@@ -37,9 +37,41 @@
     }
 
     .actions {
-      width: 30%;
+      width: 40%;
       display: flex;
-      border: 1px solid red;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .headerDarkTheme {
+    width: 85vw;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    padding: 12px 36px;
+    background: var(--neutral10);
+
+    .content {
+      width: 60%;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 4px;
+
+      h4 {
+        color: var(--neutral100);
+        margin: 0;
+      }
+
+      p {
+        color: var(--neutral95);
+        margin: 0;
+      }
+    }
+
+    .actions {
+      width: 40%;
+      display: flex;
       justify-content: space-between;
       align-items: center;
     }
@@ -49,9 +81,10 @@
     padding: 20px;
   }
 
-  .sidebar {
-    width: 16%;
+  .sidebarLightTheme {
+    width: 15vw;
     height: 100vh;
+    background-color: var(--neutral100);
 
     .logoContainer {
       display: flex;
@@ -70,7 +103,33 @@
       flex-direction: column;
       width: 100%;
       gap: 12px;
-      background: var(--neutral100);
+      // background: var(--neutral100);
+    }
+  }
+
+  .sidebarDarkTheme {
+    width: 15vw;
+    height: 100vh;
+    background-color: var(--neutral10);
+
+    .logoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 7%;
+      padding: 12px 36px;
+
+      .logo {
+        height: 32px;
+      }
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 12px;
+      // background: var(--neutral100);
     }
   }
 }

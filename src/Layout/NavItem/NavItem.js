@@ -8,10 +8,14 @@ import { ReactComponent as AnalyticsIcon } from "../../assets/icons/layout-icons
 import { ReactComponent as MyAccountIcon } from "../../assets/icons/layout-icons/my-account-icon.svg";
 import { ReactComponent as SupportIcon } from "../../assets/icons/layout-icons/support-icon.svg";
 import { ReactComponent as ComponentsIcon } from "../../assets/icons/layout-icons/components-icon.svg";
+import { useSelector } from "react-redux";
 
 function NavItem() {
+  const isDarkMode = useSelector((state) => state.theme.darkMode);
   const location = useLocation();
   const currentRoute = location.pathname;
+
+  console.log(isDarkMode);
 
   // const sidebarNavItems = [
   //   {
@@ -49,7 +53,11 @@ function NavItem() {
   return (
     <>
       <Link to="/dashboard" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <DashboardIcon
             className={
               currentRoute === "/dashboard"
@@ -73,7 +81,11 @@ function NavItem() {
       </Link>
 
       <Link to="/users" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <UsersIcon
             className={
               currentRoute === "/users" ? styles.navIconActive : styles.navIcon
@@ -95,7 +107,11 @@ function NavItem() {
       </Link>
 
       <Link to="/analytics" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <AnalyticsIcon
             className={
               currentRoute === "/analytics"
@@ -120,7 +136,11 @@ function NavItem() {
       </Link>
 
       <Link to="/my-account" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <MyAccountIcon
             className={
               currentRoute === "/my-account"
@@ -144,7 +164,11 @@ function NavItem() {
       </Link>
 
       <Link to="/support" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <SupportIcon
             className={
               currentRoute === "/support"
@@ -168,7 +192,11 @@ function NavItem() {
       </Link>
 
       <Link to="/" className={styles.link}>
-        <div className={styles.navItem}>
+        <div
+          className={
+            isDarkMode ? styles.navItemDarkTheme : styles.navItemLightTheme
+          }
+        >
           <ComponentsIcon
             className={
               currentRoute === "/" ? styles.navIconActive : styles.navIcon

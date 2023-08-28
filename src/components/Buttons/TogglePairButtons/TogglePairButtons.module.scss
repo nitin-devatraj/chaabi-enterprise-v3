@@ -6,8 +6,17 @@
   height: 4.3125rem;
   flex-shrink: 0;
 
-  .label {
-    color: var(--neutral50, #75777a);
+  .labelLightTheme {
+    color: var(--neutral50);
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.25rem;
+  }
+
+  .labelDarkTheme {
+    color: var(--neutral95);
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
