@@ -322,9 +322,9 @@ function Components() {
         notification : <Notifications notificationItems={notificationItems} />
       </div>
 
-      <div>
+      {/* <div>
         table : <Table columnNames={columnNames} tableRows={tableRows} />
-      </div>
+      </div> */}
 
       <div>
         toggle : <ToggleButton />

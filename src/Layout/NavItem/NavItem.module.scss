@@ -4,10 +4,11 @@
 
 .navItemLightTheme {
   display: flex;
-  padding: 12px 0px 12px 32px;
+  padding: 12px 0px;
+  padding-left: 1.2vw;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 16px;
   align-self: stretch;
   background-color: transparent;
 
@@ -53,10 +54,11 @@
 // dark theme mode
 .navItemDarkTheme {
   display: flex;
-  padding: 12px 0px 12px 32px;
+  padding: 12px 0px;
+  padding-left: 1.2vw;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 16px;
   align-self: stretch;
   background-color: transparent;
 
@@ -106,5 +108,12 @@
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     background: var(--primary80);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .navItemTextActive,
+  .navItemText {
+    display: none;
   }
 }
