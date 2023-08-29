@@ -5,7 +5,7 @@
   gap: 4px;
   align-self: stretch;
 
-  .labellightTheme {
+  .labelLightTheme {
     color: var(--neutral50);
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
@@ -25,7 +25,7 @@
     cursor: pointer;
   }
 
-  .inputContainerlightTheme {
+  .inputContainerLightTheme {
     display: inline-flex;
     align-items: flex-start;
     align-self: stretch;
@@ -33,7 +33,7 @@
     border: 0.0625rem solid var(--neutral90);
     background: var(--neutral100);
 
-    .dropdownlightTheme {
+    .dropdownLightTheme {
       display: flex;
       padding: 0.625rem 0.75rem 0.625rem 1rem;
       align-items: center;
