@@ -86,6 +86,8 @@
 
   .page {
     padding: 20px;
+    height: calc(100vh - 15vh);
+    background-color: red;
   }
 
   .sidebarLightTheme {
