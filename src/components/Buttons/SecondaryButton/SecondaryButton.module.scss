@@ -16,18 +16,18 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid $neutral90;
+  border: .06rem solid $neutral90;
   cursor: pointer;
 }
 
 .secondaryBtnLightTheme:not(:disabled):hover {
-  border: 1px solid $primary50;
+  border: .06rem solid $primary50;
 }
 
 .secondaryBtnLightTheme:not(:disabled):active {
-  border: 1px solid $primary50;
+  border: .06rem solid $primary50;
   background: $neutral99;
-  box-shadow: 0px 0px 0px 4px #dbe7ff;
+  box-shadow: 0px 0px 0px 4px $primary90;
 }
 
 .secondaryBtnLightTheme[disabled] {
@@ -51,7 +51,7 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid $neutral90;
+  border: .06rem solid $neutral90;
   cursor: pointer;
 }
 
@@ -63,7 +63,7 @@
   color: $neutral20;
   border: 0.0625rem solid $primary50;
   background: $neutral99;
-  box-shadow: 0rem 0rem 0rem 0.25rem #b4ceff;
+  box-shadow: 0rem 0rem 0rem 0.25rem $primary80;
 }
 
 .secondaryBtnDarkTheme[disabled] {

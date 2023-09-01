@@ -8,12 +8,12 @@
 
   .btnLightTheme {
     display: flex;
-    padding: 12px 24px;
+    padding: 1.3rem 1.5rem;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     border: 0.0625rem solid $neutral90;
-    border-right: 1px solid $neutral90;
+    border-right: .06rem solid $neutral90;
     background: $neutral100;
     color: $neutral20;
     font-family: "Roboto";
@@ -26,12 +26,12 @@
 
   .selectedBtnLightTheme {
     display: flex;
-    padding: 12px 24px;
+    padding: .75rem 1.5rem;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     border: 0.0625rem solid $neutral90;
-    border-right: 1px solid $neutral90;
+    border-right: .06rem solid $neutral90;
     background: $neutral95;
     color: $neutral20;
     font-family: "Roboto";
@@ -51,12 +51,12 @@
 
   .btnDarkTheme {
     display: flex;
-    padding: 12px 24px;
+    padding: .75rem 1.5rem;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     border: 0.0625rem solid $neutral99;
-    border-right: 1px solid $neutral99;
+    border-right: .06rem solid $neutral99;
     background: $neutral100;
     color: $neutral20;
     font-family: "Roboto";
@@ -69,12 +69,12 @@
 
   .selectedBtnDarkTheme {
     display: flex;
-    padding: 12px 24px;
+    padding: .75rem 1.5rem;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     border: 0.0625rem solid $neutral99;
-    border-right: 1px solid $neutral99;
+    border-right: .06rem solid $neutral99;
     background: $neutral95;
     color: $neutral20;
     font-family: "Roboto";

@@ -19,9 +19,9 @@
 
   .inputLightTheme {
     display: flex;
-    padding: 12px 16px;
+    padding: .75rem 1rem;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     align-self: stretch;
     border-radius: 0.25rem;
     border: 0.0625rem solid $neutral90;
@@ -36,14 +36,14 @@
 
   .inputLightTheme:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 4px #f0f1f4;
+    box-shadow: 0rem 0rem 0rem .25rem $neutral95;
   }
 
   .inputLightTheme:invalid {
-    border: 1px solid $alert60;  }
+    border: .06rem solid $alert60;  }
 
   .inputLightTheme[disabled] {
-    border: 1px solid $neutral90;
+    border: .06rem solid $neutral90;
     background: $neutral90;
     color: $neutral70;
   }
@@ -71,9 +71,9 @@
 
   .inputDarkTheme {
     display: flex;
-    padding: 12px 16px;
+    padding: .75rem 1rem;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
     align-self: stretch;
     border-radius: 0.25rem;
     border: 0.0625rem solid $neutral70;
@@ -88,14 +88,14 @@
 
   .inputDarkTheme:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 4px #c6c7ca;
+    box-shadow: 0rem 0rem 0rem .25rem  $neutral80;
   }
 
   .inputDarkTheme:invalid {
-    border: 1px solid $alert60;  }
+    border: .06rem solid $alert60;  }
 
   .inputDarkTheme[disabled] {
-    border: 1px solid $neutral40;
+    border: .06rem solid $neutral40;
     background: $neutral40;
     color: $neutral80;
   }

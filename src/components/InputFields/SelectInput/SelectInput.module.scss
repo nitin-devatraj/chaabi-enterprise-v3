@@ -25,10 +25,10 @@
     .labelDarkTheme {
       color: $neutral95 ;
       font-family: "Roboto", sans-serif;
-      font-size: 14px;
+      font-size: .875rem;
       font-style: normal;
       font-weight: 300;
-      line-height: 20px;
+      line-height: 1.25rem;
     }
 
     .input {
@@ -62,7 +62,7 @@
     flex-shrink: 0;
     border-radius: 0.25rem;
     border: 0.0625rem solid $neutral90;
-    background: $neutral100w;
+    background: $neutral100;
     padding: 0.25rem 0rem;
     flex-direction: column;
     align-items: flex-start;
@@ -76,7 +76,7 @@
       justify-content: space-between;
       gap: 0.5rem;
       align-self: stretch;
-      background-color: #fff;
+      background-color:  $primary100;
       color: $neutral20;
       font-family: "Roboto";
       font-size: 1rem;

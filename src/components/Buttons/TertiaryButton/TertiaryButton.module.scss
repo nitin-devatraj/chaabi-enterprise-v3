@@ -12,18 +12,18 @@
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid transparent;
+  border: .06rem solid transparent;
   background-color: transparent;
   cursor: pointer;
 }
 
 .tertiaryBtnLightTheme:not(:disabled):hover {
-  border: 1px solid $neutral80;
+  border: .06rem solid $neutral80;
 }
 
 .tertiaryBtnLightTheme:not(:disabled):active {
   color: $primary50;
-  border: 1px solid $neutral80;
+  border: .06rem solid $neutral80;
   background-color: $neutral90;
 }
 
@@ -43,18 +43,18 @@
   font-weight: 400;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid transparent;
+  border: .06rem solid transparent;
   background-color: transparent;
   cursor: pointer;
 }
 
 .tertiaryBtnDarkTheme:not(:disabled):hover {
-  border: 1px solid $primary99;
+  border: .06rem solid $primary99;
 }
 
 .tertiaryBtnDarkTheme:not(:disabled):active {
   color: $primary50;
-  border: 1px solid $primary99;
+  border: .06rem solid $primary99;
   background-color: $primary99;
 }
 

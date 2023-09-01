@@ -7,7 +7,7 @@
   width: 1rem;
   height: 1rem;
   border-radius: 0.25rem;
-  border: 1px solid $neutral90;
+  border: .06rem solid $neutral90;
   background: $neutral100;
 
   .checkBoxIcon {
@@ -18,8 +18,8 @@
 }
 
 .checkBoxLightTheme:hover {
-  border: 1px solid $primary50;
-  box-shadow: 0rem 0rem 0rem 0.25rem #dbe8ff;
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem 0.25rem  $primary90;
 }
 
 .checkBoxDarkTheme {
@@ -40,6 +40,6 @@
 }
 
 .checkBoxDarkTheme:hover {
-  border: 1px solid $primary50;
-  box-shadow: 0px 0px 0px 4px #b4ceff;
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem .25rem $primary80;
 }

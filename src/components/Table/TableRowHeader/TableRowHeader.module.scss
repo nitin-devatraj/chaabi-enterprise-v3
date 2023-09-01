@@ -2,21 +2,21 @@
 
 
 .tableRowHeader {
-  border-bottom: 1px solid $neutral80;
+  border-bottom: .06rem solid $neutral80;
   background: $neutral95;
 
   th {
-    height: 48px;
-    padding: 12px 24px;
+    height: 3rem;
+    padding: .75rem 1.5rem;
     align-items: center;
-    gap: 12px;
+    gap: .75rem;
     align-self: stretch;
-    color: $neutral30w;
+    color: $neutral30;
     font-family: "Roboto", sans-serif;
-    font-size: 14px;
+    font-size: .875rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
   }
 
   .nameColumnHeader {
@@ -40,10 +40,10 @@
   }
 
   .deleteColumnHeader {
-    padding: 16px 10px;
+    padding: 1rem .62rem;
   }
 
   .editColumnHeader {
-    padding: 16px 14px;
+    padding: 1rem .875rem;
   }
 }

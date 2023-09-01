@@ -19,7 +19,7 @@
 
 .radioBtnLightTheme:hover {
   border: 0.0625rem solid $primary50;
-  box-shadow: 0rem 0rem 0rem 0.25rem #dbe8ff;
+  box-shadow: 0rem 0rem 0rem 0.25rem $primary90;
 }
 
 // dark theme mode
@@ -41,6 +41,6 @@
 }
 
 .radioBtnDarkTheme:hover {
-  border: 1px solid $primary50;
-  box-shadow: 0px 0px 0px 4px #b4ceff;
+  border: .06rem solid $primary50;
+  box-shadow: 0rem 0rem 0rem .25rem $primary80;
 }
