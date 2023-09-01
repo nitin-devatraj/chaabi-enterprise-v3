@@ -1,35 +1,39 @@
+@import '../../../global-styles/global.module.scss';
+
 .secondaryBtnLightTheme {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: var(--neutral20);
+  color: $neutral20;
   background-color: transparent;
+
+  
   font-family: "Roboto";
   font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid var(--neutral90);
+  border: 1px solid $neutral90;
   cursor: pointer;
 }
 
 .secondaryBtnLightTheme:not(:disabled):hover {
-  border: 1px solid var(--primary50);
+  border: 1px solid $primary50;
 }
 
 .secondaryBtnLightTheme:not(:disabled):active {
-  border: 1px solid var(--primary50);
-  background: var(--neutral99);
+  border: 1px solid $primary50;
+  background: $neutral99;
   box-shadow: 0px 0px 0px 4px #dbe7ff;
 }
 
 .secondaryBtnLightTheme[disabled] {
-  color: var(--neutral100);
-  border: 0.0625rem solid var(--neutral90);
-  background: var(--neutral90);
+  color: $neutral100;
+  border: 0.0625rem solid $neutral90;
+  background: $neutral90;
 }
 
 //dark mode classes
@@ -39,7 +43,7 @@
   align-items: center;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: var(--neutral99);
+  color: $neutral99;
   background-color: transparent;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -47,23 +51,23 @@
   font-weight: 500;
   line-height: 1.5rem;
   text-align: center;
-  border: 1px solid var(--neutral90);
+  border: 1px solid $neutral90;
   cursor: pointer;
 }
 
 .secondaryBtnDarkTheme:not(:disabled):hover {
-  border: 0.0625rem solid var(--primary50);
+  border: 0.0625rem solid $primary50;
 }
 
 .secondaryBtnDarkTheme:not(:disabled):active {
-  color: var(--neutral20);
-  border: 0.0625rem solid var(--primary50);
-  background: var(--neutral99);
+  color: $neutral20;
+  border: 0.0625rem solid $primary50;
+  background: $neutral99;
   box-shadow: 0rem 0rem 0rem 0.25rem #b4ceff;
 }
 
 .secondaryBtnDarkTheme[disabled] {
-  color: var(--neutral100);
-  border: 0.0625rem solid var(--neutral20);
-  background: var(--neutral20);
+  color: $neutral100;
+  border: 0.0625rem solid $neutral20;
+  background: $neutral20;
 }

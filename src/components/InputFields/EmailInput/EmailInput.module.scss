@@ -1,3 +1,6 @@
+@import '../../../global-styles/global.module.scss';
+
+
 .emailInputContainer {
   display: inline-flex;
   flex-direction: column;
@@ -5,7 +8,7 @@
   justify-content: space-between;
 
   .labelLightTheme {
-    color: var(--neutral50);
+    color: $neutral50;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -21,9 +24,9 @@
     gap: 8px;
     align-self: stretch;
     border-radius: 0.25rem;
-    border: 0.0625rem solid var(--neutral90);
-    background: var(--neutral100);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral90;
+    background: $neutral100;
+    color: $neutral20;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -37,17 +40,16 @@
   }
 
   .inputLightTheme:invalid {
-    border: 1px solid var(--alert60);
-  }
+    border: 1px solid $alert60;  }
 
   .inputLightTheme[disabled] {
-    border: 1px solid var(--neutral90);
-    background: var(--neutral90);
-    color: var(--neutral70);
+    border: 1px solid $neutral90;
+    background: $neutral90;
+    color: $neutral70;
   }
 
   .helperTextLightTheme {
-    color: var(--neutral20);
+    color: $neutral20;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -58,7 +60,7 @@
 
   // dark theme mode
   .labelDarkTheme {
-    color: var(--neutral95);
+    color: $neutral95;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -74,9 +76,9 @@
     gap: 8px;
     align-self: stretch;
     border-radius: 0.25rem;
-    border: 0.0625rem solid var(--neutral70);
-    background: var(--neutral100);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral70;
+    background: $neutral100;
+    color: $neutral20;
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -90,17 +92,16 @@
   }
 
   .inputDarkTheme:invalid {
-    border: 1px solid var(--alert60);
-  }
+    border: 1px solid $alert60;  }
 
   .inputDarkTheme[disabled] {
-    border: 1px solid var(--neutral40);
-    background: var(--neutral40);
-    color: var(--neutral80);
+    border: 1px solid $neutral40;
+    background: $neutral40;
+    color: $neutral80;
   }
 
   .helperTextDarkTheme {
-    color: var(--neutral95);
+    color: $neutral95;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;

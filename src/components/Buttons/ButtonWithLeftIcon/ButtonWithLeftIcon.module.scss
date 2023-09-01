@@ -1,3 +1,5 @@
+@import '../../../global-styles/global.module.scss';
+
 .btnWithLeftIconLightTheme {
   display: inline-flex;
   padding: 0.75rem 1.5rem;
@@ -5,9 +7,9 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--neutral90);
-  background: var(--neutral100);
-  color: var(--neutral20);
+  border: 1px solid $neutral90;
+  background: $neutral100;
+  color: $neutral20;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -23,9 +25,9 @@
   align-items: center;
   gap: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid var(--neutral99);
-  background: var(--neutral100);
-  color: var(--neutral20);
+  border: 1px solid $neutral99;
+  background: $neutral100;
+  color: $neutral20;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;

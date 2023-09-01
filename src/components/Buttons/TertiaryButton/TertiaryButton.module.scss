@@ -1,8 +1,11 @@
+@import '../../../global-styles/global.module.scss';
+
+
 .tertiaryBtnLightTheme {
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: var(--primary50);
+  color: $primary50;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-style: normal;
@@ -15,17 +18,17 @@
 }
 
 .tertiaryBtnLightTheme:not(:disabled):hover {
-  border: 1px solid var(--neutral80);
+  border: 1px solid $neutral80;
 }
 
 .tertiaryBtnLightTheme:not(:disabled):active {
-  color: var(--primary50);
-  border: 1px solid var(--neutral80);
-  background-color: var(--neutral90);
+  color: $primary50;
+  border: 1px solid $neutral80;
+  background-color: $neutral90;
 }
 
 .tertiaryBtnLightTheme[disabled] {
-  color: var(--neutral70);
+  color: $neutral70;
   cursor: not-allowed;
 }
 
@@ -33,7 +36,7 @@
   display: inline-flex;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
-  color: var(--primary99);
+  color: $primary99;
   font-family: "Roboto";
   font-size: 1rem;
   font-style: normal;
@@ -46,17 +49,17 @@
 }
 
 .tertiaryBtnDarkTheme:not(:disabled):hover {
-  border: 1px solid var(--primary99);
+  border: 1px solid $primary99;
 }
 
 .tertiaryBtnDarkTheme:not(:disabled):active {
-  color: var(--primary50);
-  border: 1px solid var(--primary99);
-  background-color: var(--primary99);
+  color: $primary50;
+  border: 1px solid $primary99;
+  background-color: $primary99;
 }
 
 .tertiaryBtnDarkTheme[disabled] {
-  color: var(--neutral90);
-  background: var(--neutral20);
+  color: $neutral90;
+  background: $neutral20;
   cursor: not-allowed;
 }
