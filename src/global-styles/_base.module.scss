@@ -1,4 +1,4 @@
-// @import './global.module.scss';
+
 
 *,
 *::after,
@@ -9,33 +9,26 @@
 }
 
 @mixin respond ($breakpoint){
-    @if $breakpoint == phone{
-        @media (max-width : 37.5em ){ @content };  //600px
-    }
+    // @if $breakpoint == phone{
+    //     @media (max-width : 37.5em ){ @content };  //600px
+    // }
 
-    @if $breakpoint == tabPort {
-        @media (max-width : 56.25em ){ @content };   //900px
-    }
+    // @if $breakpoint == tabPort {
+    //     @media (max-width : 56.25em ){ @content };   //900px
+    // }
 
-    @if $breakpoint == tabLand{
-        @media (max-width : 75em ){ @content };  //1200px
-    }
+    // @if $breakpoint == tabLand{
+    //     @media (max-width : 75em ){ @content };  //1200px
+    // }
 
-    @if $breakpoint == bigDesktop{
-        @media (min-width : 112.5em ){ @content };   //1800px
-    }
+    // @if $breakpoint == bigDesktop{
+    //     @media (min-width : 112.5em ){ @content };   //1800px
+    // }
 }
 
 
 html{
-    /*
-    define 1rem
-    1rem = 10px 
-    10px/16px = .625  
-    .625 * 100% = 62.5%
-    */
-
-   
+    
     // 1rem = 16px 
     font-size: 100%;
    
