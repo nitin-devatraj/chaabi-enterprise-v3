@@ -12,42 +12,42 @@
 
 // Light color theme
 @mixin lightThemeLowest {
-  @include theme(#000, #fbfcff);
+  @include theme( $neutral0,  $neutral99);
 }
 
 @mixin lightThemeLow {
-  @include gradient-theme(#000, rgba(13, 98, 255, 0.05));
+  @include gradient-theme( $neutral0, rgba( $primary50, 0.05));
 }
 
 @mixin lightThemeRegular {
-  @include gradient-theme(#000, rgba(13, 98, 255, 0.08));
+  @include gradient-theme( $neutral0, rgba( $primary50, 0.08));
 }
 
 @mixin lightThemeHigh {
-  @include gradient-theme(#000, rgba(13, 98, 255, 0.11));
+  @include gradient-theme( $neutral0, rgba( $primary50, 0.11));
 }
 
 @mixin lightThemeHighest {
-  @include gradient-theme(#000, rgba(13, 98, 255, 0.14));
+  @include gradient-theme( $neutral0, rgba( $primary50, 0.14));
 }
 
 // Dark color theme
 @mixin darkThemeLowest {
-  @include theme($neutral100, #1b1c1f);
+  @include theme($neutral100, $neutral10);
 }
 
 @mixin darkThemeLow {
-  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.05));
+  @include gradient-theme($neutral100, rgba( $primary50, 0.05));
 }
 
 @mixin darkThemeRegular {
-  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.08));
+  @include gradient-theme($neutral100, rgba( $primary50, 0.08));
 }
 
 @mixin darkThemeHigh {
-  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.11));
+  @include gradient-theme($neutral100, rgba( $primary50, 0.11));
 }
 
 @mixin darkThemeHighest {
-  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.14));
+  @include gradient-theme($neutral100, rgba( $primary50, 0.14));
 }
