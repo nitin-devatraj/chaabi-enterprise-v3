@@ -1,3 +1,5 @@
+@import '../../../global-styles/global.module.scss';
+
 .togglePairButtonsContainer {
   display: inline-flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
   flex-shrink: 0;
 
   .labelLightTheme {
-    color: var(--neutral50);
+    color: $neutral50;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -16,7 +18,7 @@
   }
 
   .labelDarkTheme {
-    color: var(--neutral95);
+    color: $neutral95;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -28,7 +30,7 @@
     display: inline-flex;
     align-items: flex-start;
     border-radius: 0.25rem;
-    border: 0.0625rem solid var(--neutral90, #e2e3e6);
+    border: 0.0625rem solid $neutral90;
 
     .selectedBtn {
       display: flex;
@@ -38,9 +40,9 @@
       align-items: center;
       gap: 0.5rem;
       border: none;
-      border-right: 0.0625rem solid var(--neutral95, #f0f1f4);
-      background: var(--neutral95, #f0f1f4);
-      color: var(--neutral20, #303134);
+      border-right: 0.0625rem solid $neutral95 ;
+      background: $neutral95 ;
+      color: $neutral20 ;
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       font-style: normal;
@@ -57,9 +59,9 @@
       align-items: center;
       gap: 0.5rem;
       border: none;
-      border-right: 0.0625rem solid var(--neutral95, #f0f1f4);
-      background: var(--neutral100, #fff);
-      color: var(--neutral-neutral-20, #303134);
+      border-right: 0.0625rem solid $neutral95;
+      background: $neutral10;
+      color: $neutral20;
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       font-style: normal;

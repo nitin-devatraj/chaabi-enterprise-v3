@@ -37,8 +37,8 @@ function Layout() {
           }
         >
           <div className={styles.content}>
-            <h4 className={typography.h4Med}>Hello, Puneet Dhiman</h4>
-            <p className={typography.t1Lite}>Welcome to your Dashboard</p>
+            <h4>Hello, Puneet Dhiman</h4>
+            <p>Welcome to your Dashboard</p>
           </div>
           <div className={styles.actions}>
             <TextInput />

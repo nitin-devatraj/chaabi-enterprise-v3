@@ -1,22 +1,22 @@
-@import "../../../global-styles/variables.scss";
+@import '../../../global-styles/variables.scss';
 
 .tableItem {
-  border-bottom: 1px solid var(--neutral90, #e2e3e6);
-  background-color: var(--neutral100);
+  border-bottom: 1px solid $neutral90;
+  background-color: $neutral100;
 
   .draftBadge {
-    color: var(--warning50, #f79009);
-    background: var(--warning90, #fef0c7);
+    color: $warning50;
+    background: $warning90;
   }
 
   .activeBadge {
-    color: var(--success50, #12b76a);
-    background: var(--success90, #d1fadf);
+    color: $success50;
+    background: $success90;
   }
 
   .inactiveBadge {
-    color: var(--alert50, #f04438);
-    background: var(--alert90, #fee4e2);
+    color: $alert50;
+    background: $alert90;
   }
 
   .badge {
@@ -46,7 +46,7 @@
   td {
     height: 4rem;
     padding: 1rem 1.5rem;
-    color: var(--neutral40, #5e5f62);
+    color: $neutral40; /* Fixed the color property here */
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
     font-style: normal;
@@ -66,7 +66,7 @@
     .name {
       input {
         border: none;
-        color: var(--neutral40, #5e5f62);
+        color: $neutral40; /* Fixed the color property here */
         font-family: "Roboto", sans-serif;
         font-size: 1rem;
         font-style: normal;
@@ -79,7 +79,7 @@
       }
 
       .requiredMessage {
-        color: var(--alert50, #f04438);
+        color: $alert50;
       }
     }
   }
@@ -105,22 +105,22 @@
       gap: 4px;
 
       .badgeGroup1 {
-        color: var(--badgeColorMain1, #d81b60);
-        background: var(--badgeColorBack1, #fce4ec);
+        color: $badgeColorMain1;
+        background: $badgeColorBack1;
       }
 
       .badgeGroup2 {
-        color: var(--badgeColorMain2, #8e24aa);
-        background: var(--badgeColorBack2, #f3e5f5);
+        color: $badgeColorMain2;
+        background: $badgeColorBack2;
       }
 
       .badgeGroup5 {
-        color: var(--badgeColorMain5, #00acc1);
-        background: var(--badgeColorBack5, #e0f7fa);
+        color: $badgeColorMain5;
+        background: $badgeColorBack5;
       }
 
       .remainingCount {
-        color: var(--neutral30, #46474a);
+        color: $neutral30;
         text-align: center;
         font-family: "Roboto", sans-serif;
         font-size: 0.75rem;

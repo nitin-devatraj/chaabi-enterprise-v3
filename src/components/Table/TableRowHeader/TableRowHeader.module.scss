@@ -1,6 +1,9 @@
+@import '../../../global-styles/global.module.scss';
+
+
 .tableRowHeader {
-  border-bottom: 1px solid var(--neutral80, #c6c7ca);
-  background: var(--neutral95, #f0f1f4);
+  border-bottom: 1px solid $neutral80;
+  background: $neutral95;
 
   th {
     height: 48px;
@@ -8,7 +11,7 @@
     align-items: center;
     gap: 12px;
     align-self: stretch;
-    color: var(--neutral30, #46474a);
+    color: $neutral30;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-style: normal;

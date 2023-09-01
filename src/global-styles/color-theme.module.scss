@@ -1,83 +1,53 @@
-@import "./variables.scss";
+@import './variables.scss';
 
-// color theme
-// light color theme
-.lightThemeLowest {
-  color: #000;
-  background: #fbfcff;
-}
-.lightThemeLow {
-  color: #000;
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.05) 0%,
-    rgba(13, 98, 255, 0.05) 100%
-  );
-}
-.lightThemeRegular {
-  color: #000;
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.08) 0%,
-    rgba(13, 98, 255, 0.08) 100%
-  );
-}
-.lightThemeHigh {
-  color: #000;
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.11) 0%,
-    rgba(13, 98, 255, 0.11) 100%
-  );
+@mixin theme($text-color, $background-color) {
+  color: $text-color;
+  background: $background-color;
 }
 
-.lightThemeHighest {
-  color: #000;
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.14) 0%,
-    rgba(13, 98, 255, 0.14) 100%
-  );
+@mixin gradient-theme($text-color, $gradient-color) {
+  color: $text-color;
+  background: linear-gradient(0deg, $gradient-color 0%, $gradient-color 100%);
 }
 
-// dark color theme
-.darkThemeLowest {
-  color: var(--neutral100);
-  background: #1b1c1f;
+// Light color theme
+@mixin lightThemeLowest {
+  @include theme(#000, #fbfcff);
 }
 
-.darkThemeLow {
-  color: var(--neutral100);
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.05) 0%,
-    rgba(13, 98, 255, 0.05) 100%
-  );
+@mixin lightThemeLow {
+  @include gradient-theme(#000, rgba(13, 98, 255, 0.05));
 }
 
-.darkThemeRegular {
-  color: var(--neutral100);
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.08) 0%,
-    rgba(13, 98, 255, 0.08) 100%
-  );
+@mixin lightThemeRegular {
+  @include gradient-theme(#000, rgba(13, 98, 255, 0.08));
 }
 
-.darkThemeHigh {
-  color: var(--neutral100);
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.11) 0%,
-    rgba(13, 98, 255, 0.11) 100%
-  );
+@mixin lightThemeHigh {
+  @include gradient-theme(#000, rgba(13, 98, 255, 0.11));
 }
 
-.darkThemeHighest {
-  color: var(--neutral100);
-  background: linear-gradient(
-    0deg,
-    rgba(13, 98, 255, 0.14) 0%,
-    rgba(13, 98, 255, 0.14) 100%
-  );
+@mixin lightThemeHighest {
+  @include gradient-theme(#000, rgba(13, 98, 255, 0.14));
+}
+
+// Dark color theme
+@mixin darkThemeLowest {
+  @include theme($neutral100, #1b1c1f);
+}
+
+@mixin darkThemeLow {
+  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.05));
+}
+
+@mixin darkThemeRegular {
+  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.08));
+}
+
+@mixin darkThemeHigh {
+  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.11));
+}
+
+@mixin darkThemeHighest {
+  @include gradient-theme($neutral100, rgba(13, 98, 255, 0.14));
 }

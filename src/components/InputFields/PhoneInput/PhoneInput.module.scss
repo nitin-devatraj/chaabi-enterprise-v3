@@ -1,3 +1,5 @@
+@import '../../../global-styles/global.module.scss';
+
 .phoneInputContainer {
   display: inline-flex;
   flex-direction: column;
@@ -6,7 +8,7 @@
   align-self: stretch;
 
   .labelLightTheme {
-    color: var(--neutral50);
+    color: $neutral50;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -16,7 +18,7 @@
   }
 
   .labelDarkTheme {
-    color: var(--neutral95);
+    color: $neutral95;
     font-family: "Roboto", sans-serif;
     font-size: 0.875rem;
     font-style: normal;
@@ -30,8 +32,8 @@
     align-items: flex-start;
     align-self: stretch;
     border-radius: 0.25rem;
-    border: 0.0625rem solid var(--neutral90);
-    background: var(--neutral100);
+    border: 0.0625rem solid $neutral90;
+    background: $neutral100;
 
     .dropdownLightTheme {
       display: flex;
@@ -39,7 +41,7 @@
       align-items: center;
       gap: 0.25rem;
       align-self: stretch;
-      color: var(--neutral20);
+      color: $neutral20;
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       font-style: normal;
@@ -54,7 +56,7 @@
       align-items: center;
       gap: 8px;
       flex: 1 0 0;
-      color: var(--neutral20);
+      color: $neutral20;
       font-family: Roboto;
       font-size: 1rem;
       font-style: normal;
@@ -70,13 +72,13 @@
     }
 
     // .input:invalid {
-    //   border: 1px solid var(--alert60, #f97066);
+    //   border: 1px solid $alert60, f97066);
     // }
 
     .inputLightTheme[disabled] {
-      border: 1px solid var(--neutral90);
-      background: var(--neutral90);
-      color: var(--neutral70);
+      border: 1px solid $neutral90;
+      background: $neutral90;
+      color: $neutral70;
     }
   }
 
@@ -86,8 +88,8 @@
     align-items: flex-start;
     align-self: stretch;
     border-radius: 0.25rem;
-    border: 0.0625rem solid var(--neutral70);
-    background: var(--neutral100);
+    border: 0.0625rem solid $neutral70;
+    background: $neutral100;
 
     .dropdownDarkTheme {
       display: flex;
@@ -95,7 +97,7 @@
       align-items: center;
       gap: 0.25rem;
       align-self: stretch;
-      color: var(--neutral20);
+      color: $neutral20;
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       font-style: normal;
@@ -110,7 +112,7 @@
       align-items: center;
       gap: 8px;
       flex: 1 0 0;
-      color: var(--neutral20);
+      color: $neutral20;
       font-family: "Roboto", sans-serif;
       font-size: 1rem;
       font-style: normal;
@@ -126,19 +128,19 @@
     }
 
     // .input:invalid {
-    //   border: 1px solid var(--alert60, #f97066);
+    //   border: 1px solid $alert60, f97066);
     // }
 
     .inputDarkTheme[disabled] {
-      border: 1px solid var(--neutral40);
-      background: var(--neutral40);
-      color: var(--neutral80);
+      border: 1px solid $neutral40;
+      background: $neutral40;
+      color: $neutral80;
     }
   }
 }
 
 .helperTextLightTheme {
-  color: var(--neutral20);
+  color: $neutral20;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-style: normal;
@@ -148,7 +150,7 @@
 }
 
 .helperTextDarkTheme {
-  color: var(--neutral95);
+  color: $neutral95;
   font-family: "Roboto", sans-serif;
   font-size: 0.875rem;
   font-style: normal;

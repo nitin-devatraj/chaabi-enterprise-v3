@@ -1,3 +1,6 @@
+@import '../../../global-styles/global.module.scss';
+
+
 .fileInputContainer {
   display: inline-flex;
   width: 20rem;
@@ -8,8 +11,8 @@
   gap: 0.25rem;
   flex-shrink: 0;
   border-radius: 0.25rem;
-  border: 0.0625rem solid var(--neutral90, #e2e3e6);
-  background: var(--neutral100, #fff);
+  border: 0.0625rem solid $neutral90;
+  background: $neutral100;
   cursor: pointer;
 
   .content {
@@ -27,7 +30,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      border: 0.25rem solid var(--neutral95, #f0f1f4);
+      border: 0.25rem solid $neutral95;
     }
 
     .textContainer {
@@ -43,7 +46,7 @@
         align-items: flex-start;
         gap: 0.25rem;
         align-self: stretch;
-        color: var(--neutral20, #303134);
+        color: $neutral20;
         font-family: "Roboto";
         font-size: 1rem;
         font-style: normal;
@@ -51,13 +54,13 @@
         line-height: 1.5rem;
 
         span {
-          color: var(--primary50, #0d62ff);
+          color: $primary50;
         }
       }
 
       .supportingText {
         align-self: stretch;
-        color: var(--neutral50, #75777a);
+        color: $neutral50;
         text-align: center;
         font-family: "Roboto";
         font-size: 0.75rem;

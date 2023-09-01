@@ -1,8 +1,10 @@
+@import '../../../global-styles/global.module.scss';
+
 .btnGroupLightTheme {
   display: inline-flex;
   align-items: flex-start;
   border-radius: 0.25rem;
-  border: 0.0625rem solid var(--neutral90);
+  border: 0.0625rem solid $neutral90;
 
   .btnLightTheme {
     display: flex;
@@ -10,10 +12,10 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 0.0625rem solid var(--neutral90);
-    border-right: 1px solid var(--neutral90);
-    background: var(--neutral100);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral90;
+    border-right: 1px solid $neutral90;
+    background: $neutral100;
+    color: $neutral20;
     font-family: "Roboto";
     font-size: 1rem;
     font-style: normal;
@@ -28,10 +30,10 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 0.0625rem solid var(--neutral90);
-    border-right: 1px solid var(--neutral90);
-    background: var(--neutral95);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral90;
+    border-right: 1px solid $neutral90;
+    background: $neutral95;
+    color: $neutral20;
     font-family: "Roboto";
     font-size: 1rem;
     font-style: normal;
@@ -45,7 +47,7 @@
   display: inline-flex;
   align-items: flex-start;
   border-radius: 0.25rem;
-  border: 0.0625rem solid var(--neutral100);
+  border: 0.0625rem solid $neutral100;
 
   .btnDarkTheme {
     display: flex;
@@ -53,10 +55,10 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 0.0625rem solid var(--neutral99);
-    border-right: 1px solid var(--neutral99);
-    background: var(--neutral100);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral99;
+    border-right: 1px solid $neutral99;
+    background: $neutral100;
+    color: $neutral20;
     font-family: "Roboto";
     font-size: 1rem;
     font-style: normal;
@@ -71,10 +73,10 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 0.0625rem solid var(--neutral99);
-    border-right: 1px solid var(--neutral99);
-    background: var(--neutral95);
-    color: var(--neutral20);
+    border: 0.0625rem solid $neutral99;
+    border-right: 1px solid $neutral99;
+    background: $neutral95;
+    color: $neutral20;
     font-family: "Roboto";
     font-size: 1rem;
     font-style: normal;
