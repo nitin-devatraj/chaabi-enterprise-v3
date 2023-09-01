@@ -9,7 +9,9 @@ function ToggleButton({ onClick }) {
 
   function toggleBtnHandler() {
     setIsToggleActive((prevState) => !prevState);
-    onClick();
+    if (typeof onClick === "function") {
+      onClick(); // Only call onClick if it's a function
+    }
   }
 
   return (

@@ -1,3 +1,5 @@
+@import '../../global-styles/global.module.scss';
+
 .link {
   text-decoration: none;
 }
@@ -13,7 +15,7 @@
   background-color: transparent;
 
   &:hover {
-    background: var(--primary95);
+    background: $primary95;
   }
 
   .navIcon {
@@ -29,12 +31,12 @@
   }
 
   .navItemText {
-    color: var(--neutral50);
+    color: $neutral50;
     flex: 1;
   }
 
   .navItemTextActive {
-    color: var(--neutral20);
+    color: $neutral20;
     flex: 1;
   }
 
@@ -43,12 +45,12 @@
     height: 34px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    background: var(--primary50);
+    background: $primary50;
   }
 }
 
 .navItemlightTheme:hover {
-  background: var(--primary95);
+  background: $primary95;
 }
 
 // dark theme mode
@@ -63,7 +65,7 @@
   background-color: transparent;
 
   &:hover {
-    background: var(--primary80);
+    background: $primary80;
 
     .navIconActive {
       width: 32px;
@@ -76,7 +78,7 @@
     //   height: 34px;
     //   border-top-left-radius: 12px;
     //   border-bottom-left-radius: 12px;
-    //   background: var(--neutral100);
+    //   background: $neutral10);
     // }
   }
 
@@ -93,12 +95,12 @@
   }
 
   .navItemText {
-    color: var(--neutral100);
+    color: $neutral100;
     flex: 1;
   }
 
   .navItemTextActive {
-    color: var(--neutral100);
+    color: $neutral100;
     flex: 1;
   }
 
@@ -107,7 +109,7 @@
     height: 34px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    background: var(--primary80);
+    background: $primary80;
   }
 }
 
